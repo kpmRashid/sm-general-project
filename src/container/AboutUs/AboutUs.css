@@ -1,0 +1,36 @@
+.app__aboutUs{
+    background: linear-gradient(#044bb3, #0c0c0c)
+}
+.app__aboutUs-h1{
+  font-family: var(--font-base);
+  color: var(--color-grey);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 117px;
+  font-size: 70px;
+}
+.app__wrapper_img img{
+ height: 380px;
+ object-fit: cover;
+  
+}
+@media screen and (max-width:650px) {
+  .app__aboutUs-h1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -25px;
+  }
+.app__aboutUs-content{
+  margin: 0%;
+}
+.app__aboutUs-img img{
+  display: none;
+}
+.app__wrapper_img{
+  height: 380px;
+  object-fit: cover;
+  margin: 0 auto;
+  
+} 
+}

@@ -1,0 +1,127 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 1rem 2rem;
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* .app__navbar h1{
+  font-size: 30px;
+  margin-left: 50px;
+  width: 100;
+  background: linear-gradient(90deg, rgb(20, 1, 167)70%, rgba(84, 83, 83, 0)120%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.app__navbar h2{
+  display: none;
+} */
+.app__navbar-logo img {
+  width: 200px;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  list-style: none;
+}
+
+.app__navbar-links li {
+  margin: 0 2rem;
+  cursor: pointer;
+  color: var(--color-blue);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.app__navbar-links li:hover {
+  color: var(--color-grey);
+}
+
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-black);
+  transition: 0.5s ease;
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: var(--color-blue);
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen_links{
+  list-style: none;
+}
+.app__navbar-smallscreen_links li{
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-grey);
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base);
+}
+.app__navbar-smallscreen_links li:hover{
+  color: var(--color-white);
+}
+@media screen and (max-width: 2000px){
+  .app__navbar-logo img{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1150px){
+ 
+  .app__navbar-smallscreen{
+    display: flex;
+  }
+  .app__navbar h1{
+    display: none;
+  }
+  .app__navbar-links{
+    display: none;
+  }
+}
+@media screen and (max-width: 650px){
+  .app__navbar{
+    padding: 1rem;
+  }
+  .app__navbar h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--color-blue);
+  }
+
+  .app__navbar-logo img{
+    width: 175px;
+    padding: 0;
+  }
+}
